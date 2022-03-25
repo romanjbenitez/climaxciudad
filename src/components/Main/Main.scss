@@ -1,0 +1,48 @@
+@import "../../scss/colores.scss";
+
+main {
+  width: 100%;
+  background-color: $fondo-principal;
+}
+.ui.one.column.grid {
+  margin: auto;
+
+  .ui.input {
+    margin: 0 20px;
+    input {
+      background-color: $fondo-principal-oscuro;
+      color: $fuente-oscura-clara;
+      &:active {
+        border: solid 1px#fff;
+      }
+      &:focus {
+        border: solid 1px#fff;
+      }
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+#preload {
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 485px) {
+  .ui.one.column.grid {
+    margin: auto;
+
+    .ui.input {
+      margin: 10px 10%;
+      width: 80%;
+    }
+  }
+}

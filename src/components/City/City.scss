@@ -1,0 +1,21 @@
+@import "../../scss/colores.scss";
+
+
+#container {
+    background-color: $fondo-principal;
+    margin: 0;
+    padding-bottom:15px ;
+    box-sizing: border-box;
+  .titulo {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+    h1 {
+      margin-left: 20px;
+    }
+  }
+}
+

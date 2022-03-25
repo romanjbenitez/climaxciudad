@@ -1,0 +1,84 @@
+@import "../../scss/colores.scss";
+
+
+.Clima {
+  margin: 0.5rem 30% 0.5rem 10%;
+  .Clima-cuerpo {
+    display: flex;
+    background-color: $fondo-principal-gris;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    .mes {
+      display: flex;
+      align-items: center;
+
+      width: 25%;
+      justify-content: center;
+      p {
+        font-size: 2rem;
+      }
+    }
+    .temp {
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      width: 15%;
+      justify-content: space-between;
+      svg {
+        margin-right: 5px;
+      }
+      p {
+        font-size: 3rem;
+        margin: 0;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+    .dias {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        margin: 5px;
+      }
+      width: 25%;
+    }
+    .lluvia {
+      display: flex;
+      align-items: center;
+
+      width: 25%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Clima {
+    margin: 0.5rem 10%;
+  }
+}
+@media (max-width: 600px){
+    .Clima {
+        .Clima-cuerpo {
+          flex-wrap: wrap;
+          .mes {
+           width: 100%
+          }
+          .temp {
+            width:100%;
+            justify-content: center;
+          }
+          .dias {
+            width: 100%;
+            align-items: center;
+          }
+          .lluvia {
+            width:100%;
+            justify-content: center;
+          }
+        }
+      }
+    }

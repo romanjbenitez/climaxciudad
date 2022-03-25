@@ -1,0 +1,53 @@
+@import "../../scss/colores.scss";
+
+header {
+  background-color: $fondo-principal-oscuro;
+  color: $fuente-clara;
+  display: flex;
+  #logo {
+    max-width: 100px;
+    margin: 5px 10px 0;
+  }
+  #titulo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    h1 {
+      color: $fuente-clara;
+      width: 30rem;
+    }
+  }
+  #mundo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      max-width: 100px;
+      margin: 0 30px;
+    }
+  }
+}
+@media (max-width: 600px){
+  header{
+    padding: 1rem;
+    box-sizing: border-box;
+    #logo{
+      max-width: 75px;
+    }
+    #titulo{
+      align-items: center;
+      justify-content: center;
+      h1{
+        width: 15rem;
+        max-width: 15rem;
+      }
+    }
+    #container-mundo{
+      display: none;
+      #mundo{
+        display: none;
+      }
+    }
+    
+  }
+}
